@@ -4,10 +4,10 @@
 ;~ Main Script
 ;~ ################################################################################################
 
-Var() ; set all Var´s
+Var() ; set all VarÂ´s
 Gui_generate() ; Add the GUI
 Gui_check_update() ; Change the GUI for the update check
-Checking_backup() ; Cheking the File´s if an update is needed
+Checking_backup() ; Cheking the FileÂ´s if an update is needed
 	If TimeDate >= 14 ; Checks if the create date of the old backup is more than 14 days
 	{
 		Gui_start_Mail() ; Change the GUI to Outlook Start
@@ -162,8 +162,8 @@ Run, powershell.exe -Command "Send-MailMessage -To %To3% -Subject %regexSub% -Bo
 Var(){
 Global
 VNR := "3.0.0.1"
-CR := "@Holzapfel"
-SUP := "moritz.holzapfel@domain.xyz"
+CR := "@Hol"
+SUP := "m.hol@domain.xyz"
 line := "----------------------------------------------------------------------------------"
 From := "System@SoftwareName_Backup.backup"
 SmtpServer := "Smtp-server-adress"
